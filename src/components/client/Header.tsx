@@ -12,7 +12,7 @@ const Header = () => {
   ];
   return (
     <>
-      <header className="w-full bg-[#f5f5dc] shadow-md fixed top-0 z-50">
+      <header className="w-full bg-[#f5f5dc] shadow-md">
         <nav className="container mx-auto w-full flex items-center justify-between p-4">
           <div>
             <h1 className="text-2xl font-semibold">Jaya Capital</h1>

@@ -1,7 +1,12 @@
+"use client";
+
+import HeroSection from "./content/HeroSection";
+
 export default function Page() {
   return (
-    <div>
+    <>
+      <HeroSection />
       <h1>This is home page for client</h1>
-    </div>
+    </>
   );
 }
