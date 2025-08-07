@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "@/components/client/Header";
+import Header from "@/components/shared/Header";
 // import Footer from "@/components/client/Footer";
 // import "./globals.css";
 
@@ -25,7 +25,7 @@ export default function ClientLayout({
       </header>
 
       {/* Main content with proper spacing and flex grow */}
-      <main className="flex-1 pt-16 px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-18">
         <div className="w-full min-h-screen">{children}</div>
       </main>
 
