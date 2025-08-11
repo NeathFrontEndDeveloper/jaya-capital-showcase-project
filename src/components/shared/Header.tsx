@@ -25,7 +25,10 @@ const Header = () => {
   return (
     <header className="w-full z-50">
       <nav className="container mx-auto flex items-center justify-between p-4">
-        <Link href="/" className="text-2xl font-semibold">
+        <Link
+          href="/"
+          className="text-2xl font-semibold hover:text-[#006400] transition-colors duration-300"
+        >
           Jaya Capital
         </Link>
 
