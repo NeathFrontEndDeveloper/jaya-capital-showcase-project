@@ -84,54 +84,9 @@ export default function PortfolioHero() {
       {/* Card Section */}
       <section className="py-10 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          // <div
-          //   key={index}
-          //   className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-[1.01] "
-          // >
-          //   <div className="grid grid-cols-2">
-          //     {/* Before Image */}
-          //     <div className="relative">
-          //       <Image
-          //         src={project.before}
-          //         alt="Before renovation"
-          //         width={300}
-          //         height={200}
-          //         className="object-cover w-full h-full"
-          //       />
-          //       <span className="absolute bottom-2 left-2 bg-black/50 text-white text-sm px-2 py-1 rounded">
-          //         Before
-          //       </span>
-          //     </div>
-
-          //     {/* After Image */}
-          //     <div className="relative">
-          //       <Image
-          //         src={project.after}
-          //         alt="After renovation"
-          //         width={300}
-          //         height={200}
-          //         className="object-cover w-full h-full"
-          //       />
-          //       <span className="absolute bottom-2 left-2 bg-black/50 text-white text-sm px-2 py-1 rounded">
-          //         After
-          //       </span>
-          //     </div>
-          //   </div>
-
-          //   {/* Description */}
-          //   <div className="p-4">
-          //     <p className="text-gray-700 text-sm font-medium">
-          //       {project.description}
-          //     </p>
-          //   </div>
-          // </div>
-        ))}
-      </section>
-      <section className="py-10 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-[1.01] animate-fadeIn"
+            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-[1.01] "
           >
             <div className="grid grid-cols-2">
               {/* Before Image */}
@@ -165,22 +120,9 @@ export default function PortfolioHero() {
 
             {/* Description */}
             <div className="p-4">
-              <h1 className="font-semibold text-center text-2xl">
-                {picture[0].string}
-              </h1>
-              <p className="mt-3">{picture[0].property}</p>
-              <div className="flex justify-center mt-5">
-                <div className="flex justify-center mt-5">
-                  <button
-                    onClick={() =>
-                      (window.location.href = "/Portfolio-details")
-                    }
-                    className="inline-block border-2 border-green-600 text-black font-semibold text-sm px-4 py-2 rounded hover:bg-green-600 hover:text-white transition duration-300 cursor-pointer"
-                  >
-                    See more of this Home
-                  </button>
-                </div>
-              </div>
+              <p className="text-gray-700 text-sm font-medium">
+                {project.description}
+              </p>
             </div>
           </div>
         ))}
@@ -215,8 +157,6 @@ export default function PortfolioHero() {
           memories.
         </p>
       </div>
-
-     
     </div>
   );
 }
