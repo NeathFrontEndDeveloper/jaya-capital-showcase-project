@@ -1,0 +1,41 @@
+"use client";
+
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <section className="relative h-[600px] w-full">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/your-image.jpg" // Replace with your image path or import
+          alt="Home renovation"
+          fill
+          className="object-cover brightness-50"
+          priority
+        />
+      </div>
+
+      {/* Overlay content */}
+      <div className="relative max-w-6xl mx-auto h-full flex flex-col justify-center px-6 sm:px-12 lg:px-20 text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight max-w-3xl">
+          Transform <span className="font-bold text-green-700">Your Home</span> <br />
+          with Expert Renovation <br /> Service
+        </h1>
+
+        <p className="mt-4 max-w-xl text-white/80 text-lg">
+          We specialize in high-quality kitchen, bathroom, and interior renovations that match your lifestyle and budget.
+        </p>
+
+        <div className="mt-8 flex space-x-4">
+          <button className="bg-white text-green-800 font-semibold px-6 py-2 rounded shadow hover:bg-green-100 transition">
+            More Info
+          </button>
+          <button className="bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-2 rounded shadow transition">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
