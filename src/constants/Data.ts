@@ -2,6 +2,15 @@ import UserDemo from "@/assets/user-demo.png";
 
 export const APP_NAME = "Jaya Capital";
 
+export const NAV_ITEMS = [
+  { label: "Home", link: "/home" },
+  { label: "About Us", link: "/about" },
+  // { Label: "Testimonials", link: "/testimonials" },
+  // { Label: "Service", link: "/service" },
+  { label: "Projects", link: "/project" },
+  { label: "Contact", link: "/contact" },
+];
+
 export const STATIC_CLIENT_REVIEW = [
   {
     name: "Sarah T",
@@ -43,4 +52,8 @@ export const STATIC_CLIENT_REVIEW = [
     project: "Renovation of 2-story villa",
     complete: "April 2025",
   },
+];
+
+export const SocialLinks = [
+  { name: "Facebook", url: "https://web.facebook.com" },
 ];
