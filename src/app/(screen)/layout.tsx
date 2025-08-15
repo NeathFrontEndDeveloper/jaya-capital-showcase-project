@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,9 @@ export default function ClientLayout({
       <main className="flex-1 pt-22">
         <div className="w-full min-h-screen">{children}</div>
       </main>
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

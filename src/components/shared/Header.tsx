@@ -7,20 +7,11 @@ import { Menu, X } from "lucide-react";
 import JayaLogo from "@/assets/logo.png";
 import { APP_NAME } from "@/constants/Data";
 import Image from "next/image";
-// import { link } from "fs";
+import { NAV_ITEMS } from "@/constants/Data";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const NAV_ITEMS = [
-    { label: "Home", link: "/home" },
-    { label: "About Us", link: "/about" },
-    // { Label: "Testimonials", link: "/testimonials" },
-    // { Label: "Service", link: "/service" },
-    { label: "Projects", link: "/project" },
-    { label: "Contact", link: "/contact" },
-  ];
 
   const isActive = (link: string) => pathname === link;
 
@@ -53,7 +44,7 @@ const Header = () => {
             <li key={link}>
               <Link
                 href={link}
-                className={`relative px-1 py-2 group transition-colors duration-300 ${
+                className={`relative px-1 py-2 group transition-colors duration-300 text-md ${
                   isActive(link)
                     ? "text-[#006400]"
                     : "text-[#1F1F1F] hover:text-[#006400]"
