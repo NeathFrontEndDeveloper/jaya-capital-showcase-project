@@ -4,6 +4,10 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import JayaLogo from "@/assets/logo.png";
+import { APP_NAME } from "@/constants/Data";
+import Image from "next/image";
+// import { link } from "fs";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +16,8 @@ const Header = () => {
   const NAV_ITEMS = [
     { label: "Home", link: "/home" },
     { label: "About Us", link: "/about" },
+    // { Label: "Testimonials", link: "/testimonials" },
+    // { Label: "Service", link: "/service" },
     { label: "Projects", link: "/project" },
     { label: "Contact", link: "/contact" },
   ];
@@ -22,14 +28,23 @@ const Header = () => {
     setIsOpen(false);
   };
 
+  const LOGO = JayaLogo;
+
   return (
     <header className="w-full z-50">
       <nav className="container mx-auto flex items-center justify-between p-4">
         <Link
           href="/"
-          className="text-2xl font-semibold hover:text-[#006400] transition-colors duration-300"
+          className="text-2xl font-semibold hover:text-[#006400] transition-colors duration-300 flex items-center justify-between space-x-4"
         >
-          Jaya Capital
+          <span className="w-auto h-auto rounded-full">
+            <Image
+              src={LOGO}
+              alt="Company Logo"
+              className="w-14 h-14 border border-black rounded-full overflow-hidden"
+            />
+          </span>
+          <span>{APP_NAME}</span>
         </Link>
 
         {/* Desktop Menu */}
