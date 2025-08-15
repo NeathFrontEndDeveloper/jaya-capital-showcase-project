@@ -19,10 +19,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { TEXTS } from "@/constants/color";
-import { IoSend } from "react-icons/io5";
-// import { motion } from "framer-motion";
+// import { IoSend } from "react-icons/io5";
 
-// Enhanced validation schema with better error messages
 const contactSchema = z.object({
   full_name: z.string().nonempty({ message: "Full Name is required" }),
 
@@ -83,10 +81,6 @@ const ContactForm = ({ onSubmit, className = "" }: ContactFormProps) => {
       setIsSubmitting(false);
     }
   };
-
-  const {
-    formState: { errors },
-  } = form;
 
   return (
     <div className={className}>

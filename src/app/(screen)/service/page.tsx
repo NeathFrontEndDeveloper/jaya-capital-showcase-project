@@ -1,12 +1,12 @@
-// import Testimonials from "./content/testimonials";
+// import HeroSection from "./content/heroSection";
 import ComingSoon from "@/components/shared/comingsoon";
 
 export default function Page() {
   return (
     <div className="w-full min-h-screen">
       <ComingSoon />
-      {/* <Testimonials /> */}
-      {/* <h1>This is testimonials page for client</h1> */}
+      {/* <HeroSection />
+      <h1>This is testimonials page for client</h1> */}
     </div>
   );
 }

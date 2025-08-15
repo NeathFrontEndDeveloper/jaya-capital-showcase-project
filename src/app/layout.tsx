@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#F5F0E6]">
         {/* global providers like ThemeProvider, Toasts, etc. */}
         {children}
       </body>
