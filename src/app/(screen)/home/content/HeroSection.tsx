@@ -24,10 +24,10 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-8 flex space-x-4">
-          <button className="bg-white text-green-800 font-semibold px-6 py-2 rounded shadow hover:bg-green-500 hover:text-white transition">
+          <button className="bg-white text-green-800 font-semibold px-6 py-2 rounded-2xl shadow hover:bg-green-500 hover:text-white transition">
             More Info
           </button>
-          <button className="bg-green-800 hover:bg-green-500 text-white font-semibold px-6 py-2 rounded shadow transition">
+          <button className="bg-green-800 hover:bg-green-500 text-white font-semibold px-6 py-2 rounded-2xl shadow transition">
             Contact Us
           </button>
         </div>

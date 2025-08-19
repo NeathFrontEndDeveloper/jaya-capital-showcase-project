@@ -3,55 +3,49 @@
 import HeroSection from "./content/HeroSection";
 import { useRouter } from "next/navigation";
 
-
 export default function Page() {
-   const router = useRouter();
+       const router = useRouter();
   const services = [
     {
       title: "Living room",
       description:
         "Stylish updates to enhance comfort and function from flooring and lighting to custom shelves and layouts.",
-      image: "/images/11 copy.JPG",
+      image: "/images/cozy-livingroom.JPG",
     },
     {
   title: "Kitchen",
   description:
     "Modern, functional kitchen makeovers with upgraded cabinets, counters, lighting, and smart storage.",
-  image: "/images/7.JPG",
+  image: "/images/modern-kitchen.JPG",
 },
-
     {
       title: "Bed-room",
       description:
         "Create a calm, comfortable space with lighting upgrades, fresh layouts, and built-in wardrobes.",
-      image: "/images/28.JPG",
+      image: "/images/cozy-bedroom.JPG",
     },
     {
       title: "Bathroom",
       description:
         "Transform your bathroom with sleek tiling, quality fixtures, walk-in showers, and smart design.",
-      image: "/images/11.JPG",
+      image: "/images/bathroom.JPG",
     },
   ];
 const portfolio = [
   { src: "/images/livingroom-pfl.JPG", title: "Modern Living Room" },
   { src: "/images/kitchen-pfl.JPG", title: "Luxury Kitchen" },
-  { src: "/images/9 copy.JPG", title: "Cozy Bedroom" },
-  { src: "/images/2.JPG", title: "Elegant Dining Area" },
+  { src: "/images/bedroom.JPG", title: "Cozy Bedroom" },
+  { src: "/images/dining-area.JPG", title: "Elegant Dining Area" },
 ];
-
-
 
   return (
     <>
       <HeroSection />
-
-      {/* Service Highlights */}
-      <section className="py-16 bg-white text-center px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-4">
+      <section className="py-16 bg-white text-center px-4" >
+        <h2 data-aos="fade-up" className="text-2xl sm:text-3xl font-bold text-green-800 mb-4">
           What We Can Do For You
         </h2>
-        <p className="max-w-3xl mx-auto text-gray-700 mb-12">
+        <p data-aos="fade-up" className="max-w-3xl mx-auto text-gray-700 mb-12">
           From small upgrades to full remodels, we handle every detail with care and expertise.
           Our renovation services are tailored to your needs with attention to craftsmanship,
           timelines, and customer satisfaction.
@@ -75,17 +69,14 @@ const portfolio = [
             </div>
           ))}
         </div>
-
         <button
           onClick={() => router.push("/services")}
-          className="mt-10 bg-green-700 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded shadow"
+          className="mt-10 bg-green-700 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-2xl shadow"
         >
           View all Services
         </button>
-
       </section>
-
-      {/* About Us */}
+      
       <section className="bg-green-50 py-16 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -103,7 +94,7 @@ const portfolio = [
             </ul>
             <button
               onClick={() => router.push("/about")}
-              className="mt-6 bg-green-700 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded shadow"
+              className="mt-6 bg-green-700 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-2xl shadow"
             >
               Read more About Us
             </button>
@@ -117,7 +108,6 @@ const portfolio = [
         </div>
       </section>
 
-      {/* Portfolio Section */}
         <section className="py-16 bg-gray-50 text-center px-4">
           <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-4">
             Our Portfolio
@@ -132,14 +122,12 @@ const portfolio = [
                 key={index}
                 className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer"
               >
-                {/* Image */}
                 <img
                   src={img.src}
                   alt={`Project ${index + 1}`}
                   className="w-full h-56 object-cover transition duration-300 group-hover:blur-sm"
                 />
 
-                {/* Overlay Text */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-20 transition duration-500">
                   <span className="text-white font-semibold text-lg">{img.title}</span>
                 </div>
@@ -150,7 +138,7 @@ const portfolio = [
           </div>
           <button
             onClick={() => router.push("/portfolio")}
-            className="bg-green-700 text-white font-semibold mt-8 px-6 py-3 rounded shadow hover:bg-green-500 transition"
+            className="bg-green-700 text-white font-semibold mt-8 px-6 py-3 rounded-2xl shadow hover:bg-green-500 transition"
           >
             See full Portfolio
           </button>
@@ -163,12 +151,16 @@ const portfolio = [
           Ready to Start Your Renovation?
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 mb-8">
-          Let’s bring your vision to life. Get in touch with us today for a free, no-obligation quote.
+          Let’s bring your best vision to life. Get in touch with us today for a free.
         </p>
-        <button className="bg-green-700 text-white font-semibold px-6 py-3 rounded shadow hover:bg-green-500 transition">
-          Request a Quote
-        </button>
+        <button
+            onClick={() => router.push("/portfolio")}
+            className="bg-green-700 text-white font-semibold mt-8 px-6 py-3 rounded-2xl shadow hover:bg-green-500 transition"
+          >
+            Contact us for a Renovation
+          </button>
       </section>
+      
     </>
   );
 }
