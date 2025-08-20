@@ -1,36 +1,32 @@
 "use client";
 import LOGO from "@/assets/logo.png";
-import { APP_NAME } from "@/constants/Data";
+import { APP_NAME, NAV_ITEMS } from "@/constants/Data";
 import Image from "next/image";
-import { NAV_ITEMS } from "@/constants/Data";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { SocialLinks } from "@/constants/Data";
 
 const Footer = () => {
   const pathname = usePathname();
-
   const isActive = (link: string) => pathname === link;
-
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full h-60 border border-black flex flex-col items-center bg-white">
-      <div className="p-12">
-        <div className="space-y-4">
-          {/* App name with logo */}
-          <div className="flex flex-col items-center space-y-2">
-            <span className="w-auto h-auto rounded-full">
-              <Image
-                src={LOGO}
-                alt="company logo"
-                className="w-14 h-14 border border-black rounded-full overflow-hidden"
-              />
-            </span>
-            <h1 className="text-2xl font-semibold">{APP_NAME}</h1>
-          </div>
+    <footer className="w-full bg-white">
+      <div className="container mx-auto px-6 py-12 flex flex-col items-center justify-center gap-8 text-center md:text-left">
+        {/* Logo + App name */}
+        <div className="flex flex-col items-center space-y-3">
+          <Image
+            src={LOGO}
+            alt="company logo"
+            className="w-14 h-14 border border-gray-300 rounded-full"
+          />
+          <h1 className="text-3xl font-semibold">{APP_NAME}</h1>
+        </div>
 
-          {/* Nav_ITEMS */}
-          <ul className="flex items-center space-x-6">
+        {/* Navigation */}
+        <div className="flex flex-col items-center space-y-3">
+          <ul className="hidden md:flex items-center gap-6">
             {NAV_ITEMS.map(({ link, label }) => (
               <li key={link}>
                 <Link
@@ -51,13 +47,27 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+        </div>
 
-          {/* social icons link */}
-          <div className="w-full border border-black"></div>
+        {/* Social links */}
+        <div className="flex flex-col items-center md:items-end space-y-3">
+          <div className="flex gap-4">
+            {SocialLinks.map((items, index) => (
+              <Link
+                key={index}
+                href={items.url}
+                className="text-[#1F1F1F] hover:text-[#006400] transition-colors duration-300 border border-black p-2 rounded-full text-3xl"
+              >
+                <items.icon />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="border-t border-black w-full text-center p-6 bg-white">
-        <p>@ {currentYear} Jaya Capital. All rights reserved.</p>
+
+      {/* Bottom bar */}
+      <div className="text-center py-6 border-t border-gray-200 text-sm text-gray-500">
+        © {currentYear} Jaya Capital. All rights reserved.
       </div>
     </footer>
   );
