@@ -32,7 +32,7 @@ const Header = () => {
             <Image
               src={LOGO}
               alt="Company Logo"
-              className="w-14 h-14 border border-black rounded-full overflow-hidden"
+              className="w-14 h-14 border border-gray-300 rounded-full overflow-hidden"
             />
           </span>
           <span>{APP_NAME}</span>
