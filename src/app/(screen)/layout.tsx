@@ -6,9 +6,12 @@ import Footer from "@/components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jaya Capital – Renovation & Real Estate Investment",
-  description:
-    "Jaya Capital specializes in renovating and modernizing properties in Cambodia, offering high-quality rental homes tailored for expats relocating to the region.",
+  title: "Jaya Capital: Renovations",
+  description: "A modern web application built with Next.js",
+  keywords: ["nextjs", "react", "typescript"],
+  authors: [{ name: "Your Name" }],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function ClientLayout({
