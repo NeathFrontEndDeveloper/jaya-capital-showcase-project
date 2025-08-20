@@ -157,7 +157,7 @@ const portfolio = [
             onClick={() => router.push("/portfolio")}
             className="bg-green-700 text-white font-semibold mt-8 px-6 py-3 rounded-2xl shadow hover:bg-green-500 transition"
           >
-            Contact us for a Renovation
+            Contact us for Renovation
           </button>
       </section>
       
