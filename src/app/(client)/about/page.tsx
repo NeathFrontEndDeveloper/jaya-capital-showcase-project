@@ -51,7 +51,6 @@ export default function AboutPage() {
               {/* Dark overlay on active (press) */}
               <div className="absolute inset-0 bg-black opacity-0 active:opacity-100 transition-opacity duration-200"></div>
             </div>
-
           </div>
 
           {/* Second Row */}
@@ -80,7 +79,6 @@ export default function AboutPage() {
               {/* Dark overlay on active (press) */}
               <div className="absolute inset-0 bg-black opacity-0 active:opacity-100 transition-opacity duration-200"></div>
             </div>
-
           </div>
         </div>
       </div>
@@ -125,7 +123,7 @@ export default function AboutPage() {
             consultation.
           </p>
           <button className="bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-500 transition">
-            Contact Us 
+            Contact Us
           </button>
         </div>
       </div>
