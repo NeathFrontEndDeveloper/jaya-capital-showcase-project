@@ -1,6 +1,4 @@
 import UserDemo from "@/assets/user-demo.png";
-import Facebook from "@/components/font-awsome-icons/Facebook";
-import Instragram from "@/components/font-awsome-icons/Instragram";
 
 export const APP_NAME = "Jaya Capital";
 
@@ -57,6 +55,5 @@ export const STATIC_CLIENT_REVIEW = [
 ];
 
 export const SocialLinks = [
-  { icon: Facebook, url: "https://web.facebook.com" },
-  { icon: Instragram, url: "https://web.instragram.com" },
+  { name: "Facebook", url: "https://web.facebook.com", icon: "Facebook" },
 ];
