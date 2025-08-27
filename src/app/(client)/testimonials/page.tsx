@@ -1,6 +1,6 @@
 // import Testim
 // onials from "./content/testimonials";
-import ComingSoon from "@/components/shared/comingsoon";
+import ComingSoon from "@/components/client/shared/comingsoon";
 
 export default function Page() {
   return (

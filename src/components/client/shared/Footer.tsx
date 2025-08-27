@@ -1,10 +1,9 @@
 "use client";
 import LOGO from "@/assets/logo.png";
-import { APP_NAME, NAV_ITEMS } from "@/constants/Data";
+import { APP_NAME, NAV_ITEMS, SocialLinks } from "@/constants/Data";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { SocialLinks } from "@/constants/Data";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -56,7 +55,7 @@ const Footer = () => {
               <Link
                 key={index}
                 href={items.url}
-                className="text-[#1F1F1F] hover:text-[#006400] transition-colors duration-300 border border-black p-2 rounded-full text-3xl"
+                className="flex items-center justify-center w-10 h-10 border border-black rounded-full text-[#1F1F1F] hover:text-[#006400] transition-colors duration-300 text-2xl"
               >
                 <items.icon />
               </Link>
