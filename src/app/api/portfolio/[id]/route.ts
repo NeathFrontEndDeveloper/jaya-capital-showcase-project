@@ -26,18 +26,6 @@ const portfolios = [
     description: "An open-concept living room featuring contemporary furniture, bright accents, and improved natural lighting.",
     image_before_after: "/images/b-a4.jpg",
   },
-  {
-    id: 5,
-    title: "Luxury Kitchen Remodel",
-    description: "A high-end kitchen with marble countertops, smart appliances, and premium finishes for a luxury lifestyle.",
-    image_before_after: "/images/b-a5.jpg",
-  },
-  {
-    id: 6,
-    title: "Dining Area by the Pool",
-    description: "A stylish dining area designed next to the pool, perfect for gatherings with a blend of indoor-outdoor living.",
-    image_before_after: "/images/b-a6.jpg ",
-  },
 ];
 
 // GET single portfolio by ID
