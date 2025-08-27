@@ -54,7 +54,7 @@ export default function AdminLayout({
               <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-sm border-b border-gray-200 px-4 py-2">
                 <SidebarTrigger className="hover:bg-gray-100 transition-colors" />
               </header>
-              <main className="flex-1 overflow-auto p-6">{children}</main>
+              <main className="flex-1 overflow-auto p-4">{children}</main>
             </div>
           </div>
         </SidebarProvider>
