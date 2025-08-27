@@ -1,6 +1,6 @@
 import UserDemo from "@/assets/user-demo.png";
 import Facebook from "@/components/font-awsome-icons/Facebook";
-import Instagram from "@/components/font-awsome-icons/Instragram";
+// import Instagram from "@/components/font-awsome-icons/Instragram";
 import Linkedin from "@/components/font-awsome-icons/Linkedin";
 
 export const APP_NAME = "Jaya Capital";
@@ -63,11 +63,11 @@ export const SocialLinks = [
     url: "https://web.facebook.com/JayaCapitalCambodia/?_rdc=1&_rdr#",
     icon: Facebook,
   },
-  {
-    name: "Instragram",
-    url: "https://www.instagram.com/jaya_capital?igsh=aWFwd3N4cWk1cjhq",
-    icon: Instagram,
-  },
+  // {
+  //   name: "Instragram",
+  //   url: "https://www.instagram.com/jaya_capital?igsh=aWFwd3N4cWk1cjhq",
+  //   icon: Instagram,
+  // },
   {
     name: "Linkedin",
     url: "https://www.instagram.com/jaya_capital?igsh=aWFwd3N4cWk1cjhq",
